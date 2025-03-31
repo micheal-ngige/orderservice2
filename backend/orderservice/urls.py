@@ -28,4 +28,3 @@ urlpatterns = [
     path('customers/', include('customers.urls')),
     path('', home),  
 ]
-
