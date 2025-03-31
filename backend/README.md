@@ -39,16 +39,25 @@ pip install -r requirements.txt
 ### **4. Create a .env File**
 Create a `.env` file in your project's root directory and add the following:
 ```env
-SECRET_KEY='your-django-secret-key'
+DB_NAME='your db name'
+DB_USER='your db username'
+DB_PASSWORD='your db password'
+DB_HOST=localhost
+DB_PORT=5432
+SECRET_KEY= 'django _secret'
 DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
 
-AUTH0_DOMAIN='your-auth0-domain'
-AUTH0_CLIENT_ID='your-auth0-client-id'
-AUTH0_CLIENT_SECRET='your-auth0-client-secret'
-AUTH0_ALGORITHM='RS256'
+AFRICASTALKING_API_KEY=your-africas-talking-api-key
 
-AFRICASTALKING_API_KEY='your-africas-talking-api-key'
-AFRICASTALKING_USERNAME='sandbox'
+AFRICASTALKING_USERNAME=sandbox
+
+GOOGLE_CLIENT_ID='google client ID'
+GOOGLE_CLIENT_SECRET='google client secret'
+
+
+
+
 ```
 
 ### **5. Apply Database Migrations**
