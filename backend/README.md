@@ -13,7 +13,7 @@ This is a Django REST Framework-based API for managing customers and orders.
 - User authentication using Google Auth0.
 - Secure API endpoints using JWT authentication.
 - Customers can be created and orders placed.
-- SMS notifications sent using Africa's Talking API.
+- SMS notifications sent using Africa's Talking API.Use counrty code when placing an order like +254...
 
 ---
 
