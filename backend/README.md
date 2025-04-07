@@ -69,6 +69,40 @@ python3 manage.py migrate
 ```bash
 python3 manage.py createsuperuser
 ```
+CI/CD Setup with GitHub Actions
+This project uses GitHub Actions for Continuous Integration and Deployment (CI/CD).
+
+📂 Workflow File
+Located at: .github/workflows/deploy.yml
+
+✅ What It Does
+Runs on: Pushes to the master branch.
+
+🔧 Jobs:
+Test Job
+
+🧾 Checks out code.
+
+🐍 Sets up Python 3.10.
+
+📦 Installs dependencies from backend/requirements.txt.
+
+🔄 Runs Django migrations.
+
+✅ Executes Django unit tests.
+
+📊 Measures code coverage.
+
+❌ Fails the workflow if test coverage is below 80%.
+
+Deploy Job
+
+🔗 Depends on successful completion of the test job.
+
+🚀 Triggers deployment via a Render deploy hook.
+
+
+
 
 ### **7. Run the Development Server**
 ```bash
